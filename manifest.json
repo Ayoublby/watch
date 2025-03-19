@@ -1,0 +1,23 @@
+{
+    "name": "Watch Time",
+    "short_name": "WatchTime",
+    "description": "تطبيق لمشاهدة الأفلام والمسلسلات والأنمي",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#0F1419",
+    "theme_color": "#1DA1F2",
+    "icons": [
+        {
+            "src": "received_650002127573605.jpeg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "received_650002127573605.jpeg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ],
+    "lang": "ar",
+    "dir": "rtl"
+}

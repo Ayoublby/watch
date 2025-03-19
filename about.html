@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>معلومات الموقع - Watch Time</title>
+    <link rel="icon" type="image/jpeg" href="received_650002127573605.jpeg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-bar">
+        <button class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+    </header>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="movies.html">الأفلام</a></li>
+            <li><a href="series.html">المسلسلات</a></li>
+            <li><a href="anime.html">الأنمي</a></li>
+            <li><a href="about.html">معلومات الموقع</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        <h1>معلومات الموقع</h1>
+        <div class="about-container">
+            <p>مرحبًا بكم في Watch Time، وجهتكم لمشاهدة الأفلام والمسلسلات والأنمي بسهولة وراحة.</p>
+            <p>تم إنشاء هذا الموقع لتوفير تجربة مشاهدة ممتعة مع واجهة سهلة الاستخدام ومحتوى متنوع.</p>
+            <p>للتواصل أو الاستفسار، يرجى مراسلتنا على: <a href="mailto:example@email.com" class="contact-link">example@email.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        © جميع الحقوق محفوظة 2025 | AYØUB تم الإنشاء بواسطة V 0.2
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registered!', reg))
+                    .catch(err => console.log('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>
